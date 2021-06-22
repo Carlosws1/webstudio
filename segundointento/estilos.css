@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --gold1: #f4bd76;
+    --gold2: #f6cd8f;
+    --gray: #ffffff80;
+    --gray2: #f7d9d990;
+    --black1: #1a1b1f;
+    --black2: #30353b;
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+    --colorTextos: #49454567;
+    --aqua: #00FFFF;
+    --fondo: #536976;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+}
+
+/*container*/
+
+.container{
+    width: 90%;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.container-modifier{
+    width: 60%;
+}
+
+.hero{
+    width: 100%;
+    min-width: 100vh;
+    background: #536976;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav-hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(225, 255, 255, 0.6);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo-name{
+    font-size: 24px;
+}
+
+.link{
+    margin-left: 15px;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.link:hover{
+    border-top: 1px solid aqua;
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+}
+
+.link:active{
+    background: #00FFFF;
+}
+
+.link .prox{
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #000;
+    background: #fff;
+}
+
+.link-active{
+    color: var(--aqua);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.point{
+    color: #00FFFF;
+}
+
+.hero-main{
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-right: 2px solid  #fff;
+}
+
+
+.fondos{
+    object-fit: cover;
+    width: 600px;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--aqua);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy-active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f48d76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 20px;
+}
+
+.hero-textos{
+    width: 40%;
+}
+
+
+
+.sabemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    margin-top: 600px;
+    left: 30%;
+    right: 30%;
+}
+
+.sabemos p{
+    text-align: justify;
+    font-size: 25px;
+    color: #fff;
+    padding: 20px;
+}
+
+/*SERVICIOS*/
+
+.services{
+    background: #fff;
+}
+
+
+.subtitle{
+    text-align: center;
+    font-size: 40px;
+}
+
+.container-cards{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 40%;
+    padding: 20px 0;
+    overflow: hidden;
+    background: #fafafa;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card:hover{
+    box-shadow: 0 40px 10px rgba(17, 29, 48, .26);
+}
+
+.card > i{
+    font-size: 50px;
+}
+
+.cards-text{
+    width: 95%;
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.card-copy{
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/*BENEFICIOS*/
+
+.beneficios{
+    border-radius: 0 80px 0 0;
+    background: #536976;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container3{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-beneficios{
+    width: 45%;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.title-beneficios{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.copy-beneficios{
+    text-align: justify;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-beneficios .ul{
+    list-style: none;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.card-beneficios .ul .li{
+    background: #7F00FF;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+}
+
+.card-beneficios .ul .li1{
+    background: #74ebd5;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+}
+
+.ymuchos{
+    display: inline-block;
+    background: #FFF5EE;
+    color: #000;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 40px;
+
+}
+
+/*CHECK*/
+
+.container4{
+    width: 100%;
+    border-radius: 0 0 80px 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #536976;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-modifier2{
+    border-top: 2px solid #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.subtitle-modifier{
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.check-item{
+    font-size: 20px;
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    border-right: 2px solid #fff;
+}
+
+.bx-check{
+    background: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    color: var(--aqua);
+    border-radius:50%;
+    font-size: 40px;
+}
+
+.copy-section-modifier{
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.check-copy{
+    color: #fff;
+    font-weight: 300;
+    padding-top: 8px;
+}
+
+.contratar{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.cotiza2{
+    text-align: center;
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f48d76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/*FORMULARIO*/
+
+.formulario{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.form{
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #fff;
+    width: 30%;
+    padding: 10px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: var(--gold1);
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(180deg, #f7ce90 0%, #f48d76 100%);
+    transition: 2s ease all;
+    left: 0%;
+}
+
+.enviar{
+    font-weight: 700;
+    background: var(--black1);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.borrar{
+    background: var(--black1);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/*FINAL*/
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.item-contact1{
+    border-radius: 80px 0 0 0;
+    width: 33.3%;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.item-contact{
+    width: 33.3%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.item-contact--gold{
+    background: aqua;
+    color: var(--black1);
+}
+
+.contact-icon{
+    font-size: 14px;
+    color: var(--gold1);
+    line-height: 20px;
+    margin-right: 4px;
+}
+
+.contact-icon-modifier{
+    color: var(--black1);
+}
+
+.contactanos{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cta2{
+    text-decoration: none;
+}
+
+/*MODAL*/
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal{
+    width: 20%;
+    height: 50%;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0);
+    border-radius: 18px;
+}
+
+.modal-close{
+    transform: translateY(-200%);
+}
+
+
+.modal-textos > h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.modal-textos .wha{
+    font-size: 20px;
+    color: #25d366;
+    margin-bottom: 10px;
+}
+
+.w{
+    box-shadow: 2px 2px 2px #111;
+    height: 15%;
+    padding: 20px;
+}
+
+.m{
+    box-shadow: 2px 2px 2px #111;
+    height: 15%;
+    padding: 20px;
+}
+
+.c{
+    box-shadow: 2px 2px 2px #111;
+    height: 15%;
+    padding: 20px;
+}
+
+.f{
+    box-shadow: 2px 2px 2px #111;
+    height: 15%;
+    padding: 20px;
+}
+
+.in{
+    box-shadow: 2px 2px 2px #111;
+    height: 15%;
+    padding: 20px;
+}
+
+.modal-textos .mess{
+    font-size: 20px;
+    color: #00B2FF;
+    margin-bottom: 10px;
+}
+
+.modal-textos .email{
+    font-size: 20px;
+    color: #c71610;
+    margin-bottom: 10px;
+}
+
+.modal-textos .face{
+    font-size: 20px;
+    color: #4267B2;
+    margin-bottom: 10px;
+}
+
+.modal-textos .insta{
+    font-size: 20px;
+    background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.modal-textos .bxl-whatsapp{
+    font-size: 20px;
+    color: #25d366;
+}
+
+.modal-textos .bxl-messenger{
+    font-size: 20px;
+    color: #00B2FF;
+}
+
+.modal-textos .bx-mail-send{
+    font-size: 20px;
+    color: #c71610;
+}
+
+.modal-textos .bxl-facebook{
+    font-size: 20px;
+    color: #4267B2;
+}
+
+.modal-textos .bxl-instagram{
+    font-size: 20px;
+    background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+}
+
+.s{
+    text-decoration: none;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:1500px) {
+    .sabemos{
+        width: 60%;
+        left: 15%;
+        right: 15%;
+        padding-bottom: 20px;
+    }
+
+    .form{
+        width: 40%
+    }
+
+    .container3{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .container3{
+        width: 80%;
+    }
+
+    .container-modifier2{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .title-beneficios{
+        font-size: 35px;
+    }
+
+    .card-beneficios .ul{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .form{
+        width: 50%;
+    }
+
+    .sabemos p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .fondos{
+        width: 400px;
+        margin-left: 35px;
+    }
+
+    .form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sabemos{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .hero-main{
+        flex-direction: column;
+        
+    }
+
+    .hero-textos{
+        text-align: center;
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .fondos{
+        position: absolute;
+        margin: 0 auto;
+        left: 200px;
+        top: 400px;
+    }
+
+    .cta{
+        margin-top: 30px;
+    }
+
+    .sabemos{
+        width: 100%;
+        top: -10px;
+        padding-top: 40px;
+        padding-right: 30px;
+    }
+
+    .sabemos p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .sabemos{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .sabemos{
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .sabemos{
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sabemos{
+        visibility: hidden;
+    }
+
+    .title, .title-active{
+        margin-top: 30px;
+    }
+
+    .cta{
+        margin-top: 50px;
+    }
+
+    .fondos{
+        margin-top: 100px;
+        width: 500px;
+        left: 140px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container3{
+        flex-direction: column;
+    }
+
+    .container3{
+        width: 90%;
+    }
+
+    .card-beneficios{
+        width: 70%;
+        text-align: center;
+    }
+
+    .title-beneficios{
+        text-align: center;
+    }
+
+    .card-beneficios ul{
+        text-align: center;
+    }
+
+    .ymuchos{
+        margin-top: 40px;
+        text-align: center;
+    }
+}
